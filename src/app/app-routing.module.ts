@@ -1,11 +1,23 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
+import {ListHomeComponent} from './components/list-home/list-home.component';
+import {EditHomeComponent} from './components/edit-home/edit-home.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: ListHomeComponent
+  },
+  {
+    path: 'edit-home/:id',
+    component: EditHomeComponent
+  }
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

@@ -1,0 +1,44 @@
+<p>edit-home works!</p>
+
+<form [formGroup]="homeForm" (ngSubmit)="updateForm()">
+  <table class="table table-dark table-striped">
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" class="form-control" formControlName="home_Name" value="{{home.home_Name}}"></td>
+    </tr>
+    <tr>
+      <td>Loại phòng:</td>
+      <td><input type="text" class="form-control" formControlName="type_Room" value="{{home.type_Room}}"></td>
+    </tr>
+    <tr>
+      <td>Loại nhà:</td>
+      <td><input type="text" class="form-control" formControlName="type_Home" value="{{home.type_Home}}"></td>
+    </tr>
+    <tr>
+      <td>Địa chỉ:</td>
+      <td><input type="text" class="form-control" formControlName="address" value="{{home.address}}"></td>
+    </tr>
+    <tr>
+      <td>Số giường: </td>
+      <td><input type="text" class="form-control" formControlName="num_Bedroom" value="{{home.num_Bedroom}}"></td>
+    </tr>
+    <tr>
+      <td>Số phòng tắm:</td>
+      <td><input type="text" class="form-control" formControlName="num_Bathroom" value="{{home.num_Bathroom}}"></td>
+    </tr>
+    <tr>
+      <td>Ghi chú:</td>
+      <td><input type="text" class="form-control" formControlName="description" value="{{home.description}}"></td>
+    </tr>
+    <tr>
+      <td>Giá :</td>
+      <td><input type="text" class="form-control" formControlName="price" value="{{home.price}}"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="submit" value="Submit">
+        <input type="button" (click)="deleteHome()" value="Delete">
+      </td>
+    </tr>
+  </table>
+</form>
