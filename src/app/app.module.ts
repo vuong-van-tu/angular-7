@@ -8,6 +8,12 @@ import { ListHomeComponent } from './components/list-home/list-home.component';
 import { EditHomeComponent } from './components/edit-home/edit-home.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {TimelinesComponent} from './components/timelines/timelines.component';
+import {YoutubePlaylistComponent} from './components/youtube-playlist/youtube-playlist.component';
+import { YoutubePlayerComponent } from './components/youtube-player/youtube-player.component';
+import { ProductCreateComponent } from './components/product-create/product-create.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
+
+
 
 
 @NgModule({
@@ -15,7 +21,11 @@ import {TimelinesComponent} from './components/timelines/timelines.component';
     AppComponent,
     ListHomeComponent,
     EditHomeComponent,
-    TimelinesComponent
+    TimelinesComponent,
+    YoutubePlaylistComponent,
+    YoutubePlayerComponent,
+    ProductCreateComponent,
+    ProductListComponent,
   ],
   imports: [
     BrowserModule,
