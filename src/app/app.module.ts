@@ -7,12 +7,15 @@ import {HttpClientModule} from '@angular/common/http';
 import { ListHomeComponent } from './components/list-home/list-home.component';
 import { EditHomeComponent } from './components/edit-home/edit-home.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import {TimelinesComponent} from './components/timelines/timelines.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ListHomeComponent,
-    EditHomeComponent
+    EditHomeComponent,
+    TimelinesComponent
   ],
   imports: [
     BrowserModule,
