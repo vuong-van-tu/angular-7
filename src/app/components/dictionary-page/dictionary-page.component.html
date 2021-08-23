@@ -1,0 +1,7 @@
+<h2>Danh sách từ</h2>
+
+<ul *ngFor="let word of dictionaries">
+  <li><a [routerLink]="['/dictionaries',word.word]">{{word.word}}</a></li>
+</ul>
+
+<router-outlet></router-outlet>

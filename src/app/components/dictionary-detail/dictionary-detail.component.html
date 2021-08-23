@@ -1,0 +1,11 @@
+
+<div *ngIf="dictionary; else tmpl">
+  <h4>Nghĩa của từ {{dictionary.word}}: {{dictionary.mean}}</h4>
+</div>
+
+<ng-template #tmpl>
+  <h2>Nothing to show</h2>
+</ng-template>
+
+<a [routerLink]="['/dictionaries']">Back</a>
+<router-outlet></router-outlet>

@@ -12,6 +12,8 @@ import {YoutubePlaylistComponent} from './components/youtube-playlist/youtube-pl
 import { YoutubePlayerComponent } from './components/youtube-player/youtube-player.component';
 import { ProductCreateComponent } from './components/product-create/product-create.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
+import { DictionaryPageComponent } from './components/dictionary-page/dictionary-page.component';
+import { DictionaryDetailComponent } from './components/dictionary-detail/dictionary-detail.component';
 
 
 
@@ -26,6 +28,8 @@ import { ProductListComponent } from './components/product-list/product-list.com
     YoutubePlayerComponent,
     ProductCreateComponent,
     ProductListComponent,
+    DictionaryPageComponent,
+    DictionaryDetailComponent,
   ],
   imports: [
     BrowserModule,
