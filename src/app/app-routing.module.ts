@@ -9,6 +9,7 @@ import {ProductListComponent} from './components/product-list/product-list.compo
 import {ProductCreateComponent} from './components/product-create/product-create.component';
 import {DictionaryPageComponent} from './components/dictionary-page/dictionary-page.component';
 import {DictionaryDetailComponent} from './components/dictionary-detail/dictionary-detail.component';
+import {ProductEditComponent} from './components/product-edit/product-edit.component';
 
 
 const routes: Routes = [
@@ -31,11 +32,21 @@ const routes: Routes = [
       component: YoutubePlayerComponent
     }]
   }, {
-    path: 'product/list',
-    component: ProductListComponent
-  }, {
-    path: 'product/create',
-    component: ProductCreateComponent
+    path: 'product',
+    children: [
+      {
+        path: 'list',
+        component: ProductListComponent
+      },
+      {
+        path: 'create',
+        component: ProductCreateComponent
+      },
+      {
+        path: 'edit/:id',
+        component: ProductEditComponent
+      }
+    ]
   }, {
     path: 'dictionaries',
     component: DictionaryPageComponent

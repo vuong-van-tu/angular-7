@@ -11,5 +11,8 @@
     <td>{{product.name}}</td>
     <td>{{product.price}}</td>
     <td>{{product.description}}</td>
+    <td><a [routerLink]="['/product/edit',product.id]">Chỉnh sửa</a></td>
+    <td><a [routerLink]="['/product/list']" (click)="deleteProduct(product.id)">Xóa</a></td>
   </tr>
 </table>
+<router-outlet></router-outlet>

@@ -22,4 +22,10 @@ export class ProductListComponent implements OnInit {
     this.products = this.productService.getAll();
   }
 
+  deleteProduct(id: number) {
+    const r = confirm('Xóa thật không?');
+    if (r === true) {
+      this.productService.delete(id);
+    }
+  }
 }

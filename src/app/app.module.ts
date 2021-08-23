@@ -14,6 +14,7 @@ import { ProductCreateComponent } from './components/product-create/product-crea
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { DictionaryPageComponent } from './components/dictionary-page/dictionary-page.component';
 import { DictionaryDetailComponent } from './components/dictionary-detail/dictionary-detail.component';
+import { ProductEditComponent } from './components/product-edit/product-edit.component';
 
 
 
@@ -30,6 +31,7 @@ import { DictionaryDetailComponent } from './components/dictionary-detail/dictio
     ProductListComponent,
     DictionaryPageComponent,
     DictionaryDetailComponent,
+    ProductEditComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,23 @@
+<h1>Sửa thông tin sản phẩm</h1>
+<form [formGroup]="productForm" (ngSubmit)="update(product.id)">
+  <table>
+    <tr>
+      <td>Tên sản phẩm:</td>
+      <td><input type="text" formControlName="name" value="{{product.name}}"></td>
+    </tr>
+    <tr>
+      <td>Giá sản phẩm</td>
+      <td><input type="number" formControlName="price" value="{{product.price}}"></td>
+    </tr>
+    <tr>
+      <td>Mô tả về sản phẩm</td>
+      <td><input type="text" formControlName="description" value="{{product.description}}"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Cập nhật</button></td>
+    </tr>
+  </table>
+</form>
+<a [routerLink]="['/product/list']">Quay lại</a>
+<router-outlet></router-outlet>
